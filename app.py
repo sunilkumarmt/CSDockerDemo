@@ -17,7 +17,7 @@ class WelcomeHandler(BaseHTTPRequestHandler):
             return
 
         message = escape(os.environ.get(
-            "WELCOME_MESSAGE", "Hi, welcome to the Computing Systems Lab!"
+            "WELCOME_MESSAGE", "Hi, welcome to the Computing Systems Lab!  Containers are very popular"
         ))
         version = escape(os.environ.get("APP_VERSION", "v1"))
         requested_path = escape(self.path)
